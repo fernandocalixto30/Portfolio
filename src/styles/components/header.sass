@@ -1,0 +1,63 @@
+.nav-bar 
+    font-family: "Roboto", sans-serif
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 5px 15px
+
+    .footer-logo
+        font-family: 'Sans', sans-serif
+        font-size: 24px
+        font-weight: bold
+        align-items: center
+
+        .highlight
+            color: #dd2323
+
+.nav-bar ul 
+    list-style: none
+    display: flex
+    gap: 20px
+
+
+.nav-bar ul a 
+    color: #fff
+    text-decoration: none
+    position: relative
+
+
+
+.nav-bar ul a::after 
+    content: ""
+    position: absolute
+    bottom: -2px
+    left: 0
+    width: 0
+    height: 2px
+    background-color: #004e92
+    transition: .8s
+
+
+.nav-bar ul a:hover::after 
+    width: 100%
+
+
+
+
+
+.idioma #pt 
+    display: none
+    background-color: #4e4949
+    padding: 10px 20px
+    border-radius: 8px
+    color: #fff
+    cursor: pointer
+
+
+.idioma #en 
+    display: flex
+    background-color: #4e4949
+    padding: 10px 20px
+    border-radius: 8px
+    color: #fff
+    cursor: pointer

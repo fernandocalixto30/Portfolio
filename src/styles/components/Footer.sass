@@ -1,0 +1,73 @@
+.footer
+    height: 150px
+    color: #ededed
+    padding: 40px 20px
+    text-align: center
+
+    .footer-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 20px
+
+        @media (min-width: 768px)
+            flex-direction: row
+            justify-content: space-between
+
+    .footer-logo
+        font-family: 'Sans', sans-serif
+        font-size: 24px
+        font-weight: bold
+
+        .highlight
+            color: #dd2323
+
+    .footer-links
+        list-style: none
+        display: flex
+        flex-direction: column
+        gap: 10px
+        padding: 0
+        margin: 0
+
+        @media (min-width: 768px)
+            flex-direction: row
+
+        li
+            a
+                text-decoration: none
+                color: #ededed
+                transition: color 0.3s ease-in-out
+
+                &:hover
+                    color: #030638
+
+.footer-socials
+    display: flex
+    gap: 15px
+
+    a
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        color: #ffffff // Cor inicial branca
+        border-radius: 50%
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out
+
+        &:hover
+            transform: scale(1.2)
+
+        // Estilo de hover para GitHub
+        &:nth-child(1):hover
+            color: #6e5494 // Cor oficial do GitHub (roxo escuro)
+
+        // Estilo de hover para Instagram
+        &:nth-child(2):hover
+            color: #DD2A7B // Cor principal do gradiente do Instagram (rosa)
+
+        // Estilo de hover para LinkedIn
+        &:nth-child(3):hover
+            color: #0077B5 // Azul oficial do LinkedIn
+

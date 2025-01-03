@@ -1,0 +1,98 @@
+.jornada
+  padding: 2rem
+  margin-bottom: 100px
+
+
+  h2
+    text-align: center
+    font-size: 2.5rem
+    margin-bottom: 100px
+    margin-top: 50px
+
+  .timeline
+    position: relative
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    padding-left: 2rem
+    align-items: center 
+
+  
+    &::before
+      content: ""
+      position: absolute
+      left: 50%
+      top: 0
+      bottom: 0
+      width: 2px
+      background: #ccc
+      transform: translateX(-50%) 
+
+    .timeline-item
+      position: relative
+      display: flex
+      align-items: center
+      background: #202041
+      padding: 1.5rem
+      width: 600px
+      border-radius: 10px
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+      color: #fff
+      transition: transform 0.3s ease
+      justify-content: flex-start 
+
+   
+      &:nth-child(odd)
+        margin-left: -650px
+        &::before
+          content: ""
+          position: absolute
+          left: -1rem
+          top: 50%
+          width: 12px
+          height: 12px
+          background: #202041
+          border: 2px solid #ccc
+          border-radius: 50%
+          transform: translateY(-50%)
+          margin-left: 617px
+
+
+
+
+      &:nth-child(even)
+       margin-right: -580px
+
+
+      &::before
+        content: ""
+        position: absolute
+        left: -14px
+        top: 50%
+        width: 12px
+        height: 12px
+        background: #202041
+        border: 2px solid #ccc
+        border-radius: 50%
+        transform: translateY(-50%) 
+      .year
+        font-size: 1.25rem
+        font-weight: bold
+        margin-right: 2rem
+        background: #333
+        color: #fff
+        padding: 0.5rem 1rem
+        border-radius: 5px
+        flex-shrink: 0
+
+      .content
+        h3
+          font-size: 1.5rem
+          font-weight: 600
+          margin-bottom: 0.5rem
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0.2)
+
+        p
+          font-size: 1rem
+          line-height: 1.5
+          color: #ddd
